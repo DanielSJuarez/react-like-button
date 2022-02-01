@@ -5,9 +5,11 @@ function LikeButton({numCount, counter}){
         numCount();
     }
 
+    const text = counter === 1 ? 'Like' : 'Likes';
+
     return(
         <button onClick={click} type="submit" className="btn btn__primary btn__lg like">
-            <span>{counter} likes</span>
+            <span>{counter} {text}</span>
         </button>
     )
 }
